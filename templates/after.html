@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %} Куда теперь? {% endblock %}
+{% block image %}
+    <style>
+    body {
+      background-image: url('static/img/Brueghel_res.jpg');
+    }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <br>
+    <h3 align="center" style="background-color:#CD853F; opacity: 1; color: #FFFFE0">Большое спасибо за прохождение!</h3>
+    <br>
+    <h4 style="background-color:#CD853F; opacity: 1" >
+        <br>
+        <br>
+        <div align="center">
+            <a href="/res2">
+                <input type="button" class="btn btn-outline-light btn-lg" value="результаты" />
+            </a>
+            <a href="/">
+                <input type="button" class="btn btn-outline-light btn-lg" value="Вернуться к описанию" />
+            </a>
+            <a href="/questions">
+                <input type="button" class="btn btn-outline-light btn-lg" value="Пройти опрос ещё раз" />
+            </a>
+        </div>
+        <br>
+        <br>
+    </h4>
+    <br>
+{% endblock %}
+
+{% block downstyle %}
+    <img src="static/img/zadum.png" alt style="width:90px;height:190px;object-fit:cover;object-position:50% 50%; opacity: .5">
+    <h style="opacity: .67" class="text-white"> И при чём тут Брейгель? </h>
+{% endblock %}

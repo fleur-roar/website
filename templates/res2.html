@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} vvv {% endblock %}
+{% block image %}
+    <style>
+    body {
+      background-image: url('static/img/the_final_res.jpg');
+    }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <br>
+    <br>
+    <h4 style="padding: 20px; background-color:#CD853F; opacity: 1">Итого этот опрос {{ vse1 }}: {{ vsenum }} {{ vse2 }}
+        <br>
+        И из них кто такой Брейгель знают целых: {{ tol }}</h4>
+    <br>
+    <br>
+    <h4 style="padding: 20px; background-color:#CD853F; opacity: 1">Почетный победитель в категории кринжа: {{ KRINGE }}</h4>
+    <h4 style="padding: 20px; background-color:#CD853F; opacity: 1">А по смешнявости лидирует : {{ FUN }}</h4>
+{% endblock %}
+
+
